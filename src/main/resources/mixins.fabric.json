@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "com.mattmx.autotrade.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "client.MerchantScreenHandlerAccessor",
+    "client.VillagerEntityMixin"
+  ],
+  "client": [
+    "client.ClientPlayNetworkHandlerMixin",
+    "client.MinecraftClientMixin",
+    "client.VillagerScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

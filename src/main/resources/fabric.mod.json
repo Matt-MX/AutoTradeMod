@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "auto-trade",
+  "version": "${version}",
+
+  "name": "AutoTrade",
+  "description": "Automatically trade with villagers.",
+  "authors": [
+    "MattMX"
+  ],
+  "contact": {
+    "homepage": "mattmx.com",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": ["com.mattmx.autotrade.client.AutoTradeClientKt::init"]
+  },
+  "mixins": [
+    "mixins.fabric.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.20",
+    "fabric": "*",
+    "fabric-language-kotlin": "*",
+    "minecraft": "1.20.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
